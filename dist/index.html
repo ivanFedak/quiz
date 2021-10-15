@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing</title>
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+  
+    <div class="wrapper">
+
+        
+        <header class="header">
+            
+        </header>
+
+        <main class="page">
+            
+            <div class="home hide">
+                <div class='home__container _container'>
+                    <div class="home__body">
+                        <div class="home__title">Instruction:</div>
+                        <div class="home__number">Total number of questions: <span class="home__total">5</span></div>
+                        <button class="home__btn btn">Start test</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz">
+                <div class='quiz__container _container'>
+                    <div class="quiz__wrapper">
+
+                        <div class="quiz__question-number">
+                            Question <span class="quiz__current">1</span>  
+                            of  <span class="quiz__all">5</span>  
+                        </div>
+
+                        <!-- ------------------------>
+
+                        <div class="quiz__question"></div> 
+
+                        <div class="quiz__body">
+                            <div data-id="0" class="quiz__item quiz__item_1"></div>
+                            <div data-id="1" class="quiz__item quiz__item_2"></div>
+                            <div data-id="2" class="quiz__item quiz__item_3"></div>
+                            <div data-id="3" class="quiz__item quiz__item_4"></div>
+                        </div>
+                        <button class="quiz__btn btn">Next</button>
+                        <div class="quiz__indicator">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal hide">
+                <div class='modal__container _container'>
+                    <div class="modal__body">
+
+                        <div class="modal__title">Хороший результат !</div>
+
+                        <div class="modal__answer">
+                            Ты ответил правильно на <span class="modal__correct">2</span>
+                            из <span class="modal__number">3</span> вопросов
+
+                        </div>
+
+                        <div class="modal__btns">
+                            <button type="button" class="modal__btn">Попробовать снова</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer"></footer>
+
+
+    </div>
+
+
+<!-- Modals and all the stuff -->
+
+    <script src="script.js"></script>
+</body>
+</html>

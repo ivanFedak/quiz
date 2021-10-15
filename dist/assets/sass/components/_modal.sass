@@ -1,0 +1,57 @@
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 50
+    width: 100%
+    height: 100%
+    background: #000000e6
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &__container
+    &__body
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background: #008C8E
+        padding: 30px 50px
+        border-radius: 10px
+        text-align: center
+    &__title
+        @include adaptiv-value('font-size', 34, 22, 1)
+        font-weight: 700
+        color: #fff
+        &:not(:last-child)
+            margin-bottom: 15px
+    &__answer
+        @include adaptiv-value('font-size', 15, 13, 1)
+        color: #fff
+        &:not(:last-child)
+            margin-bottom: 15px
+        &>*
+            font-size: 15px
+            color: #fff
+    &__right
+    &__number
+    &__btns
+    &__btn
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        text-align: center
+        min-width: 40px
+        padding: 15px
+        background: #FE9623
+        border-radius: 5px
+        transition: all 0.3s ease 0s
+        
+        color: #fff
+        font-size: 15px
+        font-weight: 400
+        @media (any-hover: hover )
+           &:hover
+              background: #f78706

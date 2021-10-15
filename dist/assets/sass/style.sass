@@ -1,0 +1,101 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap')
+//ctr + shift + p
+
+//&display=swap
+
+
+
+@import mixins
+@import 'icons'
+// $maxWidth: 1440
+
+$maxWidthContainer: 700 + 30
+//+ 30px
+  
+  
+$md1: $maxWidthContainer + 12
+$md2: 991.98 
+$md3: 767.98
+$md4: 479.98
+
+
+$mainColor: #000000
+$green: #009688
+
+@import 'ui' 
+
+
+
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-family: Montserrat, sans-serif;
+  font-weight: 400
+  font-size: 16px
+  color: $mainColor
+
+
+html,body
+  height: 100%
+  background: #009688
+
+
+  
+._container
+  max-width: $maxWidthContainer + px
+  padding: 0 15px
+  margin: 0 auto
+
+.wrapper 
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+  
+.page 
+	flex: 1 1 auto;
+
+button
+  border: none
+  cursor: pointer
+
+ul li
+  list-style: none
+
+a
+  text-decoration: none
+
+input
+  outline: none
+  border: none
+
+
+//-----------Componets import-----------------\\
+
+
+
+@import './modules/burger' 
+@import './components/home' 
+@import './components/quiz' 
+@import './components/modal' 
+
+.hide
+  display: none
+
+
+
+
+
+
+//----------- Hacks  -----------------\\
+
+  //Line height 24  font-size 14    24/14 * 100% = 170%-line-height
+
+      // &__image 
+      //   display: block
+      //   padding: 0 0 140/230 * 100% 0
+      //   //висота картинки 140 ширина блока 230
